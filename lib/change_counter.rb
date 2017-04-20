@@ -14,6 +14,9 @@ class Fixnum
       elsif change>=10
         change-=10
         dimes+=1
+      elsif change>=5
+        change-=5
+        nickels+=1
       end
       index += 1
     end
