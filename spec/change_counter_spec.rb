@@ -23,4 +23,8 @@ describe('Fixnum#change_counter') do
     expect(5.change_counter()).to(eq('0 quarters, 0 dimes, 1 nickels and 0 pennies'))
   end
 
+  it('takes input of 4 and outputs the correct number of pennies') do
+    expect(4.change_counter()).to(eq('0 quarters, 0 dimes, 0 nickels and 4 pennies'))
+  end
+
 end
